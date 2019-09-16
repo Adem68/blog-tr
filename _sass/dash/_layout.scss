@@ -255,6 +255,10 @@
     color: lighten($color-orange);
     text-decoration: underline;
   }
+  
+  & > i {
+  color: lighten($color-red);
+  }
 }
 
 .pagination {
