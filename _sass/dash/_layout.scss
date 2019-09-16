@@ -247,20 +247,17 @@
   margin-bottom: 0.5em;
 }
 
+.heart {
+  color: $color-red; 
+}
+
 .credits {
   font-size: 10px;
+  color: lighten($color-white);
 
   & > a {
-    color: lighten($color-orange);
+    color: $color-orange;
     text-decoration: underline;
-  }
-  
-  & > p {
-    color: lighten($color-white);
-  }
-  
-  & > i {
-  color: lighten($color-red);
   }
 }
 
