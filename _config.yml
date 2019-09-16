@@ -36,7 +36,7 @@ dash:
       icon: github-square
       color: blue
     - url: https://t.me/Adem68
-      icon: telegram-square
+      icon: telegram
       color: orange
 
 tag_permalink_style: pretty
