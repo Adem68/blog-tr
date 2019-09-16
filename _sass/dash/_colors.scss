@@ -12,7 +12,9 @@ $color-cyan: #4FC1E4;
 $color-blue: #637AFE;
 $color-indigo: #6775C4;
 $color-purple: #8E59D7;
+$color-white: #ffffff;
 
+.color-white { color: $color-white; }
 .color-pink { color: $color-pink; }
 .color-red { color: $color-red; }
 .color-orange { color: $color-orange; }
@@ -23,8 +25,8 @@ $color-purple: #8E59D7;
 .color-blue { color: $color-blue; }
 .color-indigo { color: $color-indigo; }
 .color-purple { color: $color-purple; }
-
 .color-pink-hover:hover { color: $color-pink; }
+.color-white-hover:hover { color: $color-white; }
 .color-red-hover:hover { color: $color-red; }
 .color-orange-hover:hover { color: $color-orange; }
 .color-yellow-hover:hover { color: $color-yellow; }
