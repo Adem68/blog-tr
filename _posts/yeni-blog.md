@@ -2,6 +2,7 @@
 layout: post
 title: Yeni Blog
 tags: blog, yeni
+date: '2019-09-17 02:23:00 +0300'
 ---
 
 Github üzerinden blogumu yayınladım :)
