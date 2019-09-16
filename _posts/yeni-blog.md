@@ -2,7 +2,6 @@
 layout: post
 title: Yeni Blog
 tags: blog, yeni
-permalink: /yeni-blog/
 ---
 
 Github üzerinden blogumu yayınladım :)
