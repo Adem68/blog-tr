@@ -15,7 +15,7 @@ plugins:
  - liquid-md5
  - jekyll/tagging
  
-paginate: 1
+paginate: 5
 paginate_path: "/page:num/"
 theme: jekyll-dash
 permalink: /:title
@@ -41,4 +41,4 @@ dash:
 
 tag_permalink_style: pretty
 tag_page_layout: tag_page
-tag_page_dir: etiket
+tag_page_dir: tag
