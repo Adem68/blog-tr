@@ -6,7 +6,7 @@ description: >-
 baseurl: ""
 url: "https://adem68.github.io"
 twitter_username: AdemOzcan68
-github_username:  Adem68
+github_username: Adem68
 markdown: kramdown
 plugins:
  - jekyll-feed
@@ -23,7 +23,6 @@ permalink: /:title
 gist:
   noscript: false
 # jekyll-dash date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 dash:
   date_format: "%b %-d, %Y"
 
@@ -37,7 +36,7 @@ dash:
       icon: github-square
       color: blue
     - url: https://t.me/Adem68
-      icon: itch-io
+      icon: telegram-square
       color: orange
 
 tag_permalink_style: pretty
