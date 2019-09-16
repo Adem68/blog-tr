@@ -249,10 +249,10 @@
 
 .credits {
   font-size: 10px;
-  color: lighten($color-white, 100%);
+  color: lighten($color-white);
 
   & > a {
-    color: lighten($color-orange, 100%);
+    color: lighten($color-orange);
     text-decoration: underline;
   }
 }
