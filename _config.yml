@@ -3,6 +3,7 @@ author: Adem Furkan ÖZCAN
 email: info@ademfurkan.com
 description: >-
     Flutter ile uygulama geliştiriyorum, vaktim oldukça blog yazıyorum ve hobi olarak siber güvenlikle uğraşıyorum.
+show_excerpts: true
 baseurl: ""
 url: "https://adem68.github.io"
 twitter_username: AdemOzcan68
@@ -19,6 +20,9 @@ paginate: 5
 paginate_path: "/page:num/"
 permalink: /:title
 
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
 gist:
   noscript: false
 # jekyll-dash date format
@@ -37,7 +41,3 @@ dash:
     - url: https://t.me/Adem68
       icon: telegram
       color: orange
-
-tag_permalink_style: pretty
-tag_page_layout: tag_page
-tag_page_dir: tag
