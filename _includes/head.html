@@ -2,11 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Adem Furkan ÖZCAN">
-  <title>{{ site.title }} | {{ page.title }}</title> 
+  {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  <link rel="canonical" href="https://adem68.github.io/">
-  {%- feed_meta -%}
   <link rel="icon" type="image/png" href="{{ "/assets/favicon.ico" | relative_url }}" />
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 </head>
