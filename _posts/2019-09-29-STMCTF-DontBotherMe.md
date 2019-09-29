@@ -263,7 +263,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 	}
 
 	
-<img src="https://i.ibb.co/j8Xy4L1/flag.jpg" alt="flag" border="0">
+<img src="https://i.ibb.co/TPgCbgp/flag.png" alt="flag" border="0">
 
 ```
 STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
