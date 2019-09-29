@@ -161,14 +161,14 @@ public class MySmsReceiver extends BroadcastReceiver {
 }
 ```
 
-İlk dikkatimizi çeken `postRequest` kısmı ama ondan öncesinde counter.message ve counter.number ın
+İlk dikkatimizi çeken `postRequest` kısmı ama ondan öncesinde counter.message ve counter.number'ın
 
 ```bash
 counter.message = smsMessageArr[i].getOriginatingAddress();
 counter.number = smsMessageArr[i].getMessageBody();
 ```
-			
-üst taraftaki şu kodda  ters çevrildiğini görüyoruz.  Sonrasında da if bloğunun içindeki 
+
+şu kodda ters çevrildiğini görüyoruz. Sonrasında da if bloğunun içindeki 
 
 ```bash
 smsMessageArr[i].getMessageBody().equals("flag") && smsMessageArr[i].getOriginatingAddress().equals("1453")
