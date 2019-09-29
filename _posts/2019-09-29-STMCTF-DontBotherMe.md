@@ -56,8 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
 ## İpuçları Önemli
 
-`smsManager.sendTextMessage("1923", null, counter.flag, this.val$sentIntent, null);`
-
+```bash
+smsManager.sendTextMessage("1923", null, counter.flag, this.val$sentIntent, null);
+```
 Butona tıkladığımızda 1923'e mesaj atıyor. 1923'ü bir kenara not alalım. Şimdi MySmsReciever'in içindeki kodlara bakalım.
 
 ```java
@@ -177,7 +178,7 @@ smsMessageArr[i].getMessageBody().equals("flag") && smsMessageArr[i].getOriginat
 
 Yani counter.name ve counter.number'ın son değeri alttaki gibi oluyor.
 
-```
+```bash
 counter.message = "1453";
 counter.number = "flag";
 ```
@@ -249,7 +250,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 
 İsteğimizi alttaki gibi yapalım ve response'a bakalım
 
-```
+```js
 {
 	"message" : "1453",
 	"number" : "flag",
@@ -260,7 +261,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 
 `Not Yet` diye bir response döndü. Hatırlarsanız elimizde 1923 sayısı vardı birde onunla post etmeyi deneyelim
 
-```
+```js
 {
 	"message" : "1453",
 	"number" : "flag",
@@ -270,9 +271,9 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 	
 <img src="https://i.resimyukle.xyz/eaHIJc.png" alt="flag" border="0">
 
->
+```bash
 STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
-
+```
 
 Vee `response` olarak flag döndü (:
 
