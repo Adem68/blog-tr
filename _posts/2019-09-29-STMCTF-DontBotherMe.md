@@ -4,6 +4,10 @@ title: STMCTF DontBotherMe Sorusu Çözümü
 tags: ["STMCTF", "writeup", "mobile", "DontBotherMe"]
 ---
 
+Bu yazımda STMCTF'deki Reverse kategorisinde bulunan DontBotherMe sorusunun çözümünü anlatacağım. 
+
+Öncelikle açıklamayı okumayı unutmayın.
+
 ## Dikkat!!! Önemli Açıklama
 
 CTF'lerde mobil sorularını çözerken [jdx-gui](https://github.com/skylot/jadx) kullanın benim gibi jd-gui kullanma hatasına düşmeyin. Sırf bu yüzden soruyu ctf bittikten sonra çözdüm.
