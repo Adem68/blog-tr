@@ -234,12 +234,13 @@ static String flag = "STMCTF{F4K3_FL4G}";
 
 Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alttaki gibi oldu.
 
->	{
-		"message" : "1453",
-		"number" : "flag",
-		"counter": "0"
-	}
-
+```
+{
+	"message" : "1453",
+	"number" : "flag",
+	"counter": "0"
+}
+```
 
 ##Haydi Post Edelim
 
@@ -260,7 +261,10 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 		"number" : "flag",
 		"counter": "1923"
 	}
+
 	
+<img src="https://i.ibb.co/j8Xy4L1/flag.jpg" alt="flag" border="0">
+
 ```
 STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
 ```
