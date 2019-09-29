@@ -254,6 +254,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 	"number" : "flag",
 	"counter": "0"
 }
+
 ```
 
 `Not Yet` diye bir response döndü. Hatırlarsanız elimizde 1923 sayısı vardı birde onunla post etmeyi deneyelim
@@ -269,7 +270,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 <img src="https://i.resimyukle.xyz/eaHIJc.png" alt="flag" border="0">
 
 >
-  STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
+STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
 
 
 Vee response olarak flag döndü (:
