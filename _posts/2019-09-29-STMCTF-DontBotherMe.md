@@ -273,8 +273,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
 
 
-Vee response olarak flag döndü (:
-
+Vee `response` olarak flag döndü (:
 
 ## Son
 
