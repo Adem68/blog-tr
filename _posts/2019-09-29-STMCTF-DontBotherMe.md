@@ -242,7 +242,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 }
 ```
 
-##Haydi Post Edelim
+## Haydi Post Edelim
 
 Şimdi isterseniz terminal üzerinden isterseniz program aracılığıyla isteği post etmek kaldı.
 
