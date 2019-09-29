@@ -10,7 +10,7 @@ Bu yazımda STMCTF'deki Reverse kategorisinde bulunan DontBotherMe sorusunun ç�
 
 ## Dikkat!!! Önemli Açıklama
 
-CTF'lerde mobil sorularını çözerken [jdx-gui](https://github.com/skylot/jadx) kullanın benim gibi jd-gui kullanma hatasına düşmeyin. Sırf bu yüzden soruyu ctf bittikten sonra çözdüm.
+CTF'lerde mobil sorularını çözerken [jadx-gui](https://github.com/skylot/jadx) kullanın benim gibi jd-gui kullanma hatasına düşmeyin. Sırf bu yüzden soruyu ctf bittikten sonra çözdüm.
 
 ## Hazırsan Başlayalım
 
