@@ -236,7 +236,7 @@ static String flag = "STMCTF{F4K3_FL4G}";
 
 Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alttaki gibi oldu.
 
-```
+```js
 {
 	"message" : "1453",
 	"number" : "flag",
