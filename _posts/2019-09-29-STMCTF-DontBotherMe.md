@@ -271,6 +271,7 @@ STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
 
 Vee response olarak flag döndü (:
 
-##SON
+
+## Son
 
 Yazımı okuduğunuz için teşekkür ediyorum. 
