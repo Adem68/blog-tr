@@ -10,6 +10,8 @@ CTF'lerde mobil sorularını çözerken [jdx-gui](https://github.com/skylot/jadx
 
 ## Hazırsan Başlayalım
 
+Apk dosyasını [buradan](https://adem68.github.io/assets/download/sms.apk) indirebilirsiniz.
+
 Şimdi jdx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'e girip kodlara bir bakalım.
 
 ```
