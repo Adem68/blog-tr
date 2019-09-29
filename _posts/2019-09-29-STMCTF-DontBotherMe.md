@@ -18,7 +18,7 @@ Apk dosyasını [buradan](https://adem68.github.io/assets/download/sms.apk) indi
 
 Şimdi jdx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'e girip kodlara bir bakalım.
 
-```
+```java
 package com.example.android_sms;
 
 import android.app.PendingIntent;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 Butona tıkladığımızda 1923'e mesaj atıyor. 1923'ü bir kenara not alalım. Şimdi MySmsReciever'in içindeki kodlara bakalım.
 
-```
+```java
 package com.example.android_sms;
 
 import android.content.BroadcastReceiver;
@@ -162,14 +162,14 @@ public class MySmsReceiver extends BroadcastReceiver {
 
 İlk dikkatimizi çeken `postRequest` kısmı ama ondan öncesinde counter.message ve counter.number ın
 
-```
+```java
 counter.message = smsMessageArr[i].getOriginatingAddress();
 counter.number = smsMessageArr[i].getMessageBody();
 ```
 			
 üst taraftaki şu kodda  ters çevrildiğini görüyoruz.  Sonrasında da if bloğunun içindeki 
 
-```
+```java
 smsMessageArr[i].getMessageBody().equals("flag") && smsMessageArr[i].getOriginatingAddress().equals("1453")
 ```
 
@@ -184,7 +184,8 @@ counter.number = "flag";
 
 Şimdi postRequest kısmına geri dönüp koda bir bakalım.
 
-```
+```java
+
 public void postRequest() throws IOException {
     String str = "application/json";
     MediaType parse = MediaType.parse(str);
@@ -214,7 +215,7 @@ public void postRequest() throws IOException {
 
 Koda bakıyoruz ve bizim için şurası önemli
 
-```
+```java
 jSONObject.put("message", counter.message);
 jSONObject.put("number", counter.number);
 jSONObject.put("counter", String.valueOf(counter.counter_x));
@@ -227,7 +228,7 @@ Post işlemini [bu linke](https://erici05hu8.execute-api.eu-west-1.amazonaws.com
 
 counter.message ve counter.number ı bulmuştuk ve elimizde 1923 vardı. counter.counter_x değeri için counter classına bakalım
 
-```
+```java
 static int counter_x = 0;
 static String flag = "STMCTF{F4K3_FL4G}";
 ```
