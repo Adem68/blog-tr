@@ -14,7 +14,7 @@ CTF'lerde mobil sorularını çözerken [jadx-gui](https://github.com/skylot/jad
 
 ## Hazırsan Başlayalım
 
-Apk dosyasını [buradan](https://adem68.github.io/blog/assets/download/sms.apk) indirebilirsiniz.
+Apk dosyasını [buradan](https://adem68.github.io/blog-tr/assets/download/sms.apk) indirebilirsiniz.
 
 Şimdi jdx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'e girip kodlara bir bakalım.
 
