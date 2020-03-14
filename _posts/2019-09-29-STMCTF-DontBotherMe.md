@@ -4,7 +4,7 @@ title: STMCTF DontBotherMe Sorusu Çözümü
 tags: ["STMCTF", "writeup", "mobile", "DontBotherMe"]
 ---
 
-Bu yazımda STMCTF'deki Reverse kategorisinde bulunan DontBotherMe sorusunun çözümünü anlatacağım. 
+Bu yazımda STMCTF'deki Reverse kategorisinde bulunan DontBotherMe sorusunun çözümünü anlatacağım.
 
 Öncelikle açıklamayı okumayı unutmayın.
 
@@ -16,7 +16,7 @@ CTF'lerde mobil sorularını çözerken [jadx-gui](https://github.com/skylot/jad
 
 Apk dosyasını [buradan](https://adem68.github.io/blog-tr/assets/download/sms.apk) indirebilirsiniz.
 
-Şimdi jdx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'e girip kodlara bir bakalım.
+Şimdi jadx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'e girip kodlara bir bakalım.
 
 ```java
 package com.example.android_sms;
@@ -168,7 +168,7 @@ counter.message = smsMessageArr[i].getOriginatingAddress();
 counter.number = smsMessageArr[i].getMessageBody();
 ```
 
-şu kodda ters çevrildiğini görüyoruz. Sonrasında da if bloğunun içindeki 
+şu kodda ters çevrildiğini görüyoruz. Sonrasında da if bloğunun içindeki
 
 ```bash
 smsMessageArr[i].getMessageBody().equals("flag") && smsMessageArr[i].getOriginatingAddress().equals("1453")
@@ -268,7 +268,7 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 	"counter": "1923"
 }
 ```
-	
+
 <img src="https://i.resimyukle.xyz/eaHIJc.png" alt="flag" border="0">
 
 ```bash
@@ -279,4 +279,4 @@ Vee `response` olarak flag döndü (:
 
 ## Son
 
-Yazımı okuduğunuz için teşekkür ediyorum. 
+Yazımı okuduğunuz için teşekkür ediyorum.
