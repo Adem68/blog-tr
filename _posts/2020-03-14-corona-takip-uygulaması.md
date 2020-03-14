@@ -29,7 +29,7 @@ MainActivity'nin nerede olduğunu öğrendik, şimdi uygulamanın ekran görünt
 
 <img src="assets/img/corona-landing.png" alt="coronavirus app landing" border="0">
 
-Güya bizi böyle bir arayüz karşılıyor ama gerçek arayüze bakalım :smirk:
+Güya bizi böyle bir arayüz karşılıyor ama gerçek arayüze bakalım 😏
 
 <img src="assets/img/corona-main.png" alt="coronavirus app landing" border="0" copyright="DomainTools">
 
