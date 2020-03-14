@@ -10,11 +10,11 @@ Uzun bir aradan sonra yeni bir blog yazısıyla karşınızdayım.
 
 ## Giriş
 
-Corona (nCoV-19, 2019-nCoV, korona) virüsü tüm dünyanın gündeminde olduğu için, zararlı yazılım geliştiren kötü niyetli hackerlar da hedef olarak coronayı seçmişler. coronavirusapp[.]site diye website açıp, apk'yı da site üzerinden yayınlamışlar. Girişi okuduğuna göre artık bir sonraki adıma geçebiliriz.
+Corona (nCoV-19, 2019-nCoV, korona) virüsü tüm dünyanın gündeminde olduğu için, zararlı yazılım geliştiren kötü niyetli hackerlar da hedef olarak coronayı seçmişler. coronavirusapp[.]site diye bir website açıp, apk'yı da site üzerinden yayınlamışlar. Girişi okuduğuna göre artık bir sonraki adıma geçebiliriz.
 
 ## Ön İnceleme
 
-Uygulamanın apksını kendi sitesinden download apk'ya basıp indirebilirsiniz. Hazırsan, jadx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'nin nerede olduğunu öğrenmek için AndroidManifest.xml'e girip kodlara bir bakalım.
+Uygulamanın apksını kendi sitesinden download apk'ya basıp indirebilirsin. Hazırsan, jadx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'nin nerede olduğunu öğrenmek için AndroidManifest.xml'e girip kodlara bir bakalım.
 
 ```java
         <activity android:name="com.device.security.activities.MainActivity" android:excludeFromRecents="true">
@@ -119,11 +119,12 @@ private void verifyPin() {
 
 Uygulamayı yapan eleman decrypt şifresini kodunun içine açık bir şekilde koymuş 🤣
 
+
 ## Son
 
-Yazıyı buraya kadar okuduğunuz için teşekkür ederim 😃
+Yazıyı buraya kadar okuduğun için teşekkür ederim 😃
 
-Twitter'dan bu yazının linki attığım tweeti retweetlerseniz mutlu olurum 😄
+Twitter'dan bu yazının linki attığım tweeti retweetlersen mutlu olurum 😄
 
 
 
