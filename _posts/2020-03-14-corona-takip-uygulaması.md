@@ -8,11 +8,11 @@ Merhaba,
 
 Uzun bir aradan sonra yeni bir blog yazısıyla karşınızdayım.
 
-### Giriş
+## Giriş
 
 Corona (nCoV-19, 2019-nCoV, korona) virüsü tüm dünyanın gündeminde olduğu için, zararlı yazılım geliştiren kötü niyetli hackerlar da hedef olarak coronayı seçmişler. coronavirusapp[.]site diye website açıp, apk'yı da site üzerinden yayınlamışlar. Girişi okuduğuna göre artık rivörse geçebiliriz.
 
-### Reverse Time
+## Reverse Time
 
 Şimdi jadx-gui'yi açıp apk dosyamızı seçelim. Sonrasında MainActivity'nin nerede olduğunu öğrenmek için AndroidManifest.xml'e girip kodlara bir bakalım.
 
