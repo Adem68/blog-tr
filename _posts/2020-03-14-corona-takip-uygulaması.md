@@ -27,12 +27,12 @@ Uygulamanın apksını kendi sitesinden download apk'ya basıp indirebilirsiniz.
 MainActivity'nin nerede olduğunu öğrendik, şimdi websitedeki ekran görüntülerine bakalım.
 
 
-<img src="/assets/img/corona-landing.png" alt="coronavirus app landing" border="0">
+<img src="assets/img/corona-landing.png" alt="coronavirus app landing" border="0">
 &nbsp;
 
 Güya bizi böyle bir arayüz karşılıyor ama gerçek arayüze bakalım 😏
 
-<img src="/assets/img/corona-main.png" alt="coronavirus app main" border="0" copyright="DomainTools">
+<img src="assets/img/corona-main.png" alt="coronavirus app main" border="0" copyright="DomainTools">
 &nbsp;
 
 Uygulama bizden erişilebilirlik ve kilit ekranını etkinleştirme ayarlarına izin vermemizi istiyor. Peki bu izinleri verdiğimizde ne oluyor? O zaman Reverse Time 🔧🔨⚡
@@ -41,7 +41,7 @@ Uygulama bizden erişilebilirlik ve kilit ekranını etkinleştirme ayarlarına 
 
 MainActivity'nin nerede olduğunu görmüştük diğer aktivitelere de bakalım.
 
-<img src="/assets/img/corona-activities.png" alt="coronavirus app landing" border="0">
+<img src="assets/img/corona-activities.png" alt="coronavirus app landing" border="0">
 &nbsp;
 
 > * BlockedAppActivity
@@ -263,7 +263,7 @@ Uygulama Device Admin izniyle kilit şifresi koyuyor ve kendini device admin ola
 
 Peki uygulamanın istediği izinleri verdiğimizde cihazda ne oluyor?
 
-<img src="/assets/img/corona-ransomware.png" alt="coronavirus app ransomware" border="0" copyright="DomainTools">
+<img src="assets/img/corona-ransomware.png" alt="coronavirus app ransomware" border="0" copyright="DomainTools">
 &nbsp;
 
 
