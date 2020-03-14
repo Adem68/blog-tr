@@ -124,12 +124,8 @@ Uygulamayı yapan eleman decrypt şifresini kodunun içine açık bir şekilde k
 
 Yazıyı buraya kadar okuduğun için teşekkür ederim 😃
 
-Twitter'dan bu yazının linki attığım tweeti retweetlersen mutlu olurum 😄
-
-
-
 ## Kaynaklar
 
-https://www.domaintools.com/resources/blog/covidlock-mobile-coronavirus-tracking-app-coughs-up-ransomware (Uygulamanın cihazdaki resimleri bu siteden alındı ve bu yazıyı yazmama vesile oldu)
+https://www.domaintools.com/resources/blog/covidlock-mobile-coronavirus-tracking-app-coughs-up-ransomware (Cihaz resimleri bu siteden alındı ve bu yazıyı yazmama vesile oldu)
 
 https://github.com/skylot/jadx (yazıda bahsi geçen jadx-gui aracı)
