@@ -27,11 +27,11 @@ Corona (nCoV-19, 2019-nCoV, korona) virüsü tüm dünyanın gündeminde olduğu
 MainActivity'nin nerede olduğunu öğrendik, şimdi uygulamanın ekran görüntülerine bakalım.
 
 
-<img src="https://adem68.github.io/blog-tr/assets/corona-landing.png" alt="coronavirus app landing" border="0">
+<img src="/blog-tr/assets/corona-landing.png" alt="coronavirus app landing" border="0">
 
 Güya bizi böyle bir arayüz karşılıyor ama gerçek arayüze bakalım :smirk:
 
-<img src="https://adem68.github.io/blog-tr/assets/corona-main.png" alt="coronavirus app landing" border="0" copyright="DomainTools">
+<img src="/blog-tr/assets/corona-main.png" alt="coronavirus app landing" border="0" copyright="DomainTools">
 
 
 
