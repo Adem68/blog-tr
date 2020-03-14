@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Covidlock - Coronavirus İzleme Uygulaması Analizi
+title: CovidLock - Coronavirus İzleme Uygulaması Analizi
 tags: ["corona", "virus", "mobile", "malware", "zararlı yazılım", "android", "uygulama", "covidlock"]
 ---
 
