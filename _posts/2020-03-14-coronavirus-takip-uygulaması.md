@@ -126,6 +126,7 @@ Yazıyı buraya kadar okuduğun için teşekkür ederim 😃
 
 ## Kaynaklar
 
-https://www.domaintools.com/resources/blog/covidlock-mobile-coronavirus-tracking-app-coughs-up-ransomware (Cihaz resimleri bu siteden alındı ve bu yazıyı yazmama vesile oldu)
 
-https://github.com/skylot/jadx (yazıda bahsi geçen jadx-gui aracı)
+[https://www.domaintools.com/resources/blog/covidlock-mobile-coronavirus-tracking-app-coughs-up-ransomware (Cihaz resimleri bu siteden alındı ve bu yazıyı yazmama vesile oldu)](https://www.domaintools.com/resources/blog/covidlock-mobile-coronavirus-tracking-app-coughs-up-ransomware)
+
+[https://github.com/skylot/jadx (yazıda bahsi geçen jadx-gui aracı)](https://github.com/skylot/jadx)
