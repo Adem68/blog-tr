@@ -45,9 +45,9 @@ MainActivity'nin nerede olduğunu görmüştük diğer aktivitelere de bakalım.
 <img src="assets/img/corona-activities.png" alt="coronavirus app landing" border="0">
 &nbsp;
 
-* BlockedAppActivity
-* MainActivity
-* StartServiceActivity
+- BlockedAppActivity
+- MainActivity
+- StartServiceActivity
 
 Bizleri karşılıyor. MainActivity'e geri dönüp kodları biraz inceleyelim. Bizi ilgilendiren kısım 155.ci satırdaki deviceAdministratorRequest fonksiyonu.
 
@@ -119,8 +119,7 @@ private void verifyPin() {
 
 Uygulamayı yapan eleman decrypt şifresini kodunun içine açık bir şekilde koymuş 🤣
 
-
-## Son
+## Son
 
 Yazıyı buraya kadar okuduğunuz için teşekkür ederim 😃
 
