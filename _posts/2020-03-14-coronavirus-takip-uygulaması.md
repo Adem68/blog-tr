@@ -10,7 +10,7 @@ Uzun bir aradan sonra yeni bir blog yazısıyla karşınızdayım.
 
 ## Giriş
 
-Corona (nCoV-19, 2019-nCoV, korona) virüsü tüm dünyanın gündeminde olduğu için, zararlı yazılım geliştiren kötü niyetli hackerlar da hedef olarak coronayı seçmişler. coronavirusapp[.]site diye bir website açıp, apk'yı da site üzerinden yayınlamışlar. Girişi okuduğuna göre artık bir sonraki adıma geçebiliriz.
+Corona (nCoV-19, 2019-nCoV, korona) virüsü tüm dünyanın gündeminde olduğu için, zararlı yazılım geliştiren kötü niyetli hackerlar da hedef olarak coronayı seçmişler. Coronavirus izleme uygulaması için coronavirusapp[.]site diye bir website açıp, apk dosyasını site üzerinden yayınlamışlar. Girişi okuduğuna göre artık bir sonraki adıma geçebiliriz.
 
 ## Ön İnceleme
 
