@@ -6,7 +6,7 @@ description: >-
 show_excerpts: false
 baseurl: "/"
 #url: "https://adem68.github.io/blog"
-twitter_username: AdemOzcan68
+twitter_username: AdemOzcanTR
 github_username: Adem68
 markdown: kramdown
 plugins:
