@@ -269,8 +269,6 @@ Sahte flagı ve counter_x'in 0 olduğunu gördük ve elimizdeki post isteği alt
 }
 ```
 
-<img src="https://i.resimyukle.xyz/eaHIJc.png" alt="flag" border="0">
-
 ```bash
 STMCTF{Bu_Memleket_Tarihte_Turktu_Simdide_Turktur_ve_Oyle_Kalacaktir}
 ```
