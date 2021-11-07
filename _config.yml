@@ -37,7 +37,7 @@ dash:
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
   social_links:
-    - url: https://twitter.com/AdemOzcan68
+    - url: https://twitter.com/AdemOzcanTR
       icon: twitter-square
       color: cyan
     - url: https://github.com/Adem68
